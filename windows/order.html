@@ -1,0 +1,53 @@
+<div class="window-order">
+    <div class="window-title">Заказать выступление</div>
+    <form action="#" method="post">
+        <div class="window-order-cols">
+            <div class="window-order-col">
+                <div class="form-row">
+                    <div class="form-label">Ваше имя<span>*</span></div>
+                    <div class="form-input"><input type="text" name="name" value="" class="required" /></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Телефон<span>*</span></div>
+                    <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">E-mail</div>
+                    <div class="form-input"><input type="text" name="email" value="" class="email" /></div>
+                </div>
+            </div>
+
+            <div class="window-order-col">
+                <div class="form-row">
+                    <div class="form-label">Формат выступления<span>*</span></div>
+                    <div class="form-field">
+                        <div class="form-select">
+                            <select name="format" data-placeholder="Выберите значение" class="required">
+                                <option value=""></option>
+                                <option value="1">Russian gypsy welcome style</option>
+                                <option value="2">Значение 2</option>
+                                <option value="3">Значение 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label">Примечание</div>
+                    <div class="form-textarea"><textarea name="message" rows="5" cols="10"></textarea></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="window-order-cols">
+            <div class="window-order-col">
+                <div class="form-required"><span>*</span> – поля, обязательные к заполнению</div>
+            </div>
+            <div class="window-order-col">
+                <div class="form-submit"><input type="submit" value="Отправить" /></div>
+            </div>
+        </div>
+    </form>
+</div>
