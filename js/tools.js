@@ -449,7 +449,7 @@ var sliderTimer     = null;
             var curLink = $(this);
             var curGallery = curLink.parents().find('.gallery');
             var newHTML = '<ul>';
-            curGallery.find('a').each(function() {
+            curGallery.find('.achieves-photo-inner a').each(function() {
                 var curLink = $(this);
                 newHTML += '<li><a href="' + curLink.attr('href') + '" title="' + curLink.attr('title') + '"><img src="' + curLink.attr('rel') + '" alt="" /></a></li>';
             });

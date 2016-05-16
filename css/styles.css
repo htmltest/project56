@@ -43,6 +43,24 @@ td:first-child {border-left:2px solid #987d54}
 td:last-child {border-right:2px solid #987d54}
 td strong {font-weight:500}
 
+@media (max-width:959px) {
+    h1 {font-size:30px; line-height:32px}
+    h2 {font-size:26px; line-height:31px}
+    h3 {font-size:24px; line-height:28px}
+    blockquote {font-size:25px; line-height:37px}
+}
+
+@media (max-width:767px) {
+    h1 {font-size:24px; line-height:30px}
+    h2 {font-size:21px; line-height:26px}
+    h3 {font-size:18px; line-height:24px}
+    blockquote {font-size:20px; line-height:28px; padding-left:47px}
+    blockquote:before {left:10px}
+    blockquote:before,
+    blockquote:after {font-size:44px; line-height:44px}
+    th {font-size:18px; line-height:24px}
+}
+
 .pager {margin:46px 0; font-size:0; line-height:0; letter-spacing:-1px}
 .pager-center {text-align:center}
 .pager:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
@@ -70,6 +88,20 @@ form {margin:26px 0}
 .form-success:after {left:100%}
 .form-success-title {position:relative; color:#8ad56d; font-size:24px; line-height:30px; font-weight:bold}
 .form-success-text {padding:7px 0 0 0}
+
+@media (max-width:959px) {
+    .form-error,
+    .form-success {padding:48px 0 49px 0}
+}
+
+@media (max-width:767px) {
+    .form-error,
+    .form-success {padding:38px 0 39px 0}
+    .form-error-title,
+    .form-success-title {font-size:21px; line-height:28px}
+    .form-error-text,
+    .form-success-text {padding:4px 0 0 0}
+}
 
 .form-row {margin:34px 0; display:table; width:100%}
 .form-label {display:table-cell; vertical-align:top; width:200px; padding:10px 17px 0 0; line-height:20px}
@@ -357,11 +389,21 @@ nav ul li.active a {background:#be985f; font-weight:500}
 .main-partner img {width:100%}
 .main-partner a:after {display:none}
 
+@media (max-width:959px) {
+    .main-partners {margin:0 -20px}
+    .main-partner {padding:13px 20px}
+}
+
+@media (max-width:767px) {
+    .main-partners {margin:0 -13px}
+    .main-partner {padding:8px 13px}
+}
+
 .contacts-phone {font-size:17px; padding:0 0 0 26px; margin:26px 0 0 0; background:url(../images/contacts-phone.png) no-repeat left center}
 .contacts-phone span {color:#f4c782}
 .contacts-email {font-size:17px; padding:0 0 0 26px; margin:7px 0 26px 0; background:url(../images/contacts-email.png) no-repeat left center}
 .contacts-email a {color:#f4c782}
-.contacts-order {width:243px; text-align:center}
+.contacts-order {width:243px; text-align:center; margin:0 0 26px 0}
 
 .albums {padding:9px 0 0 0}
 .album {padding:40px 40px 11px 40px; position:relative}
@@ -390,12 +432,14 @@ nav ul li.active a {background:#be985f; font-weight:500}
 }
 
 @media (max-width:767px) {
+    .album {padding-top:25px}
+    .album-header {padding:0; margin-bottom:-7px}
     .album-info {float:left; width:100%; display:block; margin:0; padding:0}
-    .album-title {display:block; padding:0 134px 0 0}
-    .album-year {display:block; white-space:normal; padding:6px 134px 0 0}
-    .album-link {display:block; white-space:normal; padding:6px 134px 0 0}
+    .album-title {display:block; padding:3px 134px 0 0; font-size:21px; line-height:28px}
+    .album-year {display:block; white-space:normal; padding:9px 134px 0 0}
+    .album-link {display:block; white-space:normal; padding:11px 134px 0 0}
     .album-cover {margin:0 0 0 -124px}
-    .album-soundcloud {float:left; width:100%; padding:35px 0 0 0}
+    .album-soundcloud {float:left; clear:left; width:100%; padding:35px 0 0 0}
 }
 
 .albums-gift {display:table; width:100%}
@@ -430,9 +474,9 @@ nav ul li.active a {background:#be985f; font-weight:500}
 
 @media (max-width:767px) {
     .achieve .slider-text {padding-bottom:0}
-    .achieve .slider-title {font-size:24px; line-height:24px}
-    .achieve .slider-anonce {display:block}
-    .achieve .slider-link {display:block}
+    .achieve .slider-title {font-size:24px; line-height:24px; padding:22px 10px 5px 10px}
+    .achieve .slider-anonce {display:block; padding-bottom:5px}
+    .achieve .slider-link {display:block; padding-bottom:23px}
 }
 
 .photos {padding:9px 0 0 0}
