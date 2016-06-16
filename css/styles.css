@@ -368,6 +368,7 @@ nav ul li.active a {background:#be985f; font-weight:500}
 .main-about-order-text {font-size:22px; line-height:30px; text-align:center; padding:23px 0 0 0}
 .main-about-order-link {width:243px; margin:0 auto; text-align:center; padding:43px 0 59px 0}
 .main-about-video {position:relative; padding:57.3% 0 0 0}
+.main-about-video-mobile {display:none}
 .main-about-video iframe {position:absolute; left:0; top:0; width:100%; height:100%; z-index:2}
 .main-about-video:before {content:""; display:block; width:274px; height:431px; background:url(../images/main-about-video-left.png); position:absolute; left:-210px; top:-180px}
 .main-about-video:after {content:""; display:block; width:433px; height:392px; background:url(../images/main-about-video-right.png); position:absolute; right:-340px; bottom:35px; z-index:3}
@@ -384,6 +385,21 @@ nav ul li.active a {background:#be985f; font-weight:500}
     .main-about-order-link {display:none}
 }
 
+@media (max-width:767px) {
+    .main-about-text {font-size:18px; line-height:26px; padding:41px 30px 33px 30px}
+    .main-about-video {display:none}
+    .main-about-video-mobile {display:block; position:relative; padding:263px 0 0 0}
+    .main-about-video-mobile iframe {position:absolute; left:0; top:0; width:100%; height:100%; z-index:2}
+    .main-about-projects {margin:48px 0 0 0}
+    .main-about-projects-inner {padding:15px 20px 0 20px}
+    .main-about-projects-title {font-size:18px; line-height:26px}
+    .main-about-projects-list {font-size:18px; line-height:23px}
+    .main-about-projects-list li {padding:0 0 23px 20px}
+    .main-about-order-title {font-size:18px; line-height:26px; padding:36px 40px 0 40px}
+    .main-about-order-text {font-size:18px; line-height:26px; padding:26px 20px 0 20px}
+    .main-about-order {padding:0 0 41px 0}
+}
+
 .main-partners-title {font-size:43px; line-height:43px; text-align:center; padding:52px 0 0 0}
 .main-partners {font-size:0; line-height:0; letter-spacing:-1px; text-align:center; margin:0 -26px; padding:23px 0 25px 0}
 .main-partner {display:inline-block; padding:18px 26px; vertical-align:top; box-sizing:border-box; width:16.66%}
@@ -398,6 +414,7 @@ nav ul li.active a {background:#be985f; font-weight:500}
 @media (max-width:767px) {
     .main-partners {margin:0 -13px}
     .main-partner {padding:8px 13px}
+    .main-partners-title {font-size:20px; line-height:26px; padding:0}
 }
 
 .contacts-phone {font-size:17px; padding:0 0 0 26px; margin:26px 0 0 0; background:url(../images/contacts-phone.png) no-repeat left center}
