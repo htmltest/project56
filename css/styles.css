@@ -426,8 +426,10 @@ nav ul li.active a {background:#be985f; font-weight:500}
 .albums {padding:9px 0 0 0}
 .album {padding:40px 40px 11px 40px; position:relative}
 .album:nth-child(odd) {background:#2c2e31}
-.album:nth-child(odd):before {content:""; display:block; width:9999px; height:100%; position:absolute; right:100%; top:0; background:#2c2e31}
-.album:nth-child(odd):after {content:""; display:block; width:9999px; height:100%; position:absolute; left:100%; top:0; background:#2c2e31}
+@media (max-width:959px) {
+    .album:nth-child(odd):before {content:""; display:block; width:9999px; height:100%; position:absolute; right:100%; top:0; background:#2c2e31}
+    .album:nth-child(odd):after {content:""; display:block; width:9999px; height:100%; position:absolute; left:100%; top:0; background:#2c2e31}
+}
 .album-header {padding:0 0 9px 0; position:relative}
 .album-header:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .album-info {float:left; width:280px; padding:0 10px 0 0}
